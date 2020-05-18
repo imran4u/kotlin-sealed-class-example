@@ -1,12 +1,12 @@
 package com.imran
 
-class FruitFactory (){
+class FruitFactory {
     fun createFruit(type:FruitType) :Fruit{
-        when (type){
-            FruitType.BANANA -> Banana("Banana", "sweet")
-            FruitType.MANGO -> Fruit.Mango("Mango", "sweet")
-            FruitType.BLUEBERRY -> Fruit.Blueberry("BlueBerry", "Sour", true)
-            FruitType.HELP -> Fruit.Help
-        }
+         return when (type){
+             FruitType.BANANA -> Banana("Banana", "sweet")
+             FruitType.MANGO -> Fruit.Mango("Mango", "sweet")
+             FruitType.BLUEBERRY -> Fruit.Blueberry("BlueBerry", "Sour", true)
+             FruitType.HELP -> Fruit.Help
+         }
     }
 }
